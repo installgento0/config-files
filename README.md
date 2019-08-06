@@ -9,4 +9,3 @@ I will probably add a regular linux config file for mpd and ncmpcpp later on.
 (MPD is used as an audio backend for ncmpcpp)
 # config.yaml (beets config)
 (beets is a music player daemon that implements the mpd protocol)
-# Blueberry & Jam (iTerm2 theme)
