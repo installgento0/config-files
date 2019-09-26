@@ -1,6 +1,10 @@
+#VIM config path
+export VIMINIT='source $MYVIMRC'
+export MYVIMRC='~/.vim/vimrc'
+
 #History
 HISTSIZE=200
-HISTFILE=/Users/<username>/Documents/zsh_history/history
+HISTFILE=/Users/nicolas/Documents/zsh_history/history
 SAVEHIST=50
 HISTDUP=erase
 
@@ -8,12 +12,7 @@ HISTDUP=erase
 export PS1=""
 
 #Aliases
-alias todocs=cd /Users/<username>/Downloads
-alias tohome=cd /Users/<username>/
-alias todtop=cd /Users/<username>/Desktop
-alias toroot=cd /
-alias tousr=cd /usr/
-alias toetc=cd /etc/
+alias tohome=cd /Users/nicolas/
 alias pingtest='ping google.com -c 25'
 alias cls=clear
 
