@@ -11,6 +11,9 @@ HISTDUP=erase
 #Startup
 export PS1=""
 
+#Brew
+export HOMEBREW_NO_EMOJI=1
+
 #Aliases
 alias tohome=cd /Users/nicolas/
 alias pingtest='ping google.com -c 25'
