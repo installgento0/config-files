@@ -1,5 +1,5 @@
 # vimrc
-(+clipboard support, windows-like keybinds)
+(clipboard support, windows-like keybinds, tabs, autocomplete suggestions)
 
 # zshrc
 My ZShell setup.
