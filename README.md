@@ -1,3 +1,6 @@
+# vimrc
+(+clipboard support, windows-like keybinds)
+
 # zshrc
 My ZShell setup.
 # config (ncmpcpp)
