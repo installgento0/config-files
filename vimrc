@@ -1,3 +1,10 @@
+"Vim plugin manager
+call plug#begin('~/.vim/plugged')
+    Plug 'bagrat/vim-buffet'
+    Plug 'valloric/youcompleteme'
+call plug#end()
+
+set ma
 set bs=2
 syntax on
 set term=xterm-256color
@@ -5,8 +12,16 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+noremap <Tab> :bn<CR>
 
-" Bail out if this isn't wanted.
+"vim-buffet keymaps
+
+noremap <Leader><S-Tab> :Bw!<CR>
+noremap <C-t> :tabnew split<CR>
+nnoremap <C-n> :Ex<CR>
+
+"MSWindows keybinds
+
 if exists("g:skip_loading_mswin") && g:skip_loading_mswin
   finish
 endif
