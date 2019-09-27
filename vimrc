@@ -1,4 +1,28 @@
-"Vim plugin manager
+fun! Start()
+  enew
+  setlocal
+    \ bufhidden=wipe
+    \ buftype=nofile
+    \ nobuflisted
+    \ nocursorcolumn
+    \ nocursorline
+    \ nolist
+    \ nonumber
+    \ noswapfile
+    \ norelativenumber
+  exec ":r /Users/nicolas/vimintro.txt"
+  setlocal
+    \ nomodifiable
+    \ nomodified
+  nnoremap <buffer><silent> e :enew<CR>
+  nnoremap <buffer><silent> i :enew <bar> startinsert<CR>
+  nnoremap <buffer><silent> o :enew <bar> startinsert<CR>
+
+endfun
+if argc() == 0
+  autocmd VimEnter * call Start()
+endif
+
 call plug#begin('~/.vim/plugged')
     Plug 'bagrat/vim-buffet'
     Plug 'valloric/youcompleteme'
@@ -13,6 +37,11 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 noremap <Tab> :bn<CR>
+set cursorline
+nnoremap <Leader>c :set cursorline!<CR>
+set cursorline
+hi CursorLine ctermbg=Black ctermfg=White cterm=NONE
+highlight CursorLineNR ctermbg=Red ctermfg=Black
 
 "vim-buffet keymaps
 
